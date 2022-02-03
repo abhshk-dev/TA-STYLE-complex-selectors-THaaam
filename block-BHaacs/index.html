@@ -17,10 +17,14 @@
   <body>
     <!---Header Section---->
     <header class="header ">
-      <div class="container flex justify-bw align-center">
+      <div class="container container-mini flex justify-bw align-center">
         <a class="brand" href="index.html">TrackL</a>
-        <nav class="navbar">
-            <ul class="flex justify-bw align-center">
+        <label for="toggle" class="bars">
+            <i class="fas fa-bars"></i>
+        </label>
+        <input type="checkbox" name="toggle" id="toggle">
+        <nav class="navbar ">
+            <ul class="flex justify-bw sm-flex-col">
                 <li><a href="#">Features</a></li>
                 <li><a href="#">Pricing</a></li>
                 <li><a href="#">About</a></li>
@@ -32,37 +36,37 @@
     <!----Main Section-->
     <main>
         <!---Hero Section --->
-        <section class="hero  flex justify-bw align-center">
+        <section class="hero container-mini flex justify-bw align-center">
             <div class="hero-content container">
                 <h1 class="hero-heading">Track The learning Process Schedule</h1>
                 <a href="#" class="btn btn-primary ">Get 30 Days Trial</a>
-                <img src="assets/hero.png" alt="" class="width-full">
+                <img src="assets/hero.png" alt="" class="width-full sm-img">
             </div>
         </section>
         <!---Files Section-->
         <section class="files container">
-            <nav class="flex justify-bw">
-                <a href="#.pdf">
+            <nav class="flex  justify-bw sm-wrap">
+                <a href="#.pdf" class="sm-flex-48">
                     <img src="assets/pdf.png" alt="pdf-icon">
                     Pdf file
                 </a>
-                <a href="#.doc">
+                <a href="#.doc" class="sm-flex-48">
                     <img src="assets/word.png" alt="word-icon">
                     word file
                 </a>
-                <a href="#.jpg">
+                <a href="#.jpg" class="sm-flex-48">
                     <img src="assets/image.png" alt="image-icon">
                     image file
                 </a>
-                <a href="#.mp4">
+                <a href="#.mp4" class="sm-flex-48">
                     <img src="assets/video.png" alt="video-icon">
                     video file
                 </a>
             </nav>
         </section>
         <!----Monitoring section-->
-        <section class="monitor container padding flex justify-bw align-center">
-            <article class="learning-monitor flex-45">
+        <section class="monitor container padding flex justify-bw align-center sm-wrap">
+            <article class="learning-monitor flex-45 sm-flex-100">
                 <h3>
                     Monitor Your learning and Improve It.
                 </h3>
@@ -74,7 +78,7 @@
                 </p>
                 <a href="#" class="btn learn-btn">Learn More</a>
             </article>
-            <div class="flex-45">
+            <div class="flex-45 sm-flex-100">
                 <img src="assets/learning-graph.png" class="full-width" alt="graph-img">
             </div>
         </section>
@@ -133,8 +137,8 @@
             </table>
         </section>
         <!---Join Section-->
-        <section class="joinUs container padding">
-            <header class="joinUs-header flex justify-center align-center">
+        <section class="joinUs container padding ">
+            <header class="joinUs-header flex justify-center align-center ">
                 <h3>
                     Join Us and let's study with your friends
                 </h3>
@@ -145,8 +149,8 @@
                 </div>
             </header>
             
-            <div class="plan-container padding flex justify-bw">
-                <div class="plan flex-45">
+            <div class="plan-container padding flex justify-bw sm-wrap">
+                <div class="plan flex-45 sm-flex-100">
                     <h3>Basic</h3>
                     <p>
                         Its a long established fact that a reader 
@@ -164,7 +168,7 @@
                     </ul>
                     <a href="#" class="btn btn-secondary">Get Started</a>
                 </div>
-                <div class="plan flex-45">
+                <div class="plan flex-45 sm-flex-100">
                     <h3>Most Popular</h3>
                     <p>
                         Its a long established fact that a reader 
@@ -199,8 +203,8 @@
     </main>
     <!----FOOTER section-->
     <footer class="container footer padding">
-        <div class=" flex justify-bw align-center flex-start ">
-            <div class="brand flex-22 flex-direction ">
+        <div class=" flex justify-bw align-center flex-start sm-wrap ">
+            <div class="brand flex-22 sm-flex-48 flex-direction ">
                 <h5>
                     TrackL
                 </h5>
@@ -221,7 +225,7 @@
                     </ul>
                 </nav>
             </div>
-            <div class=" features flex-22">
+            <div class=" features flex-22 sm-flex-48 ">
                 <h3>Features</h3>
                 <nav class="footer-items">
                   <ul>
@@ -240,7 +244,7 @@
                   </ul>
                 </nav>
             </div>
-            <div class=" support flex-22">
+            <div class=" support flex-22 sm-flex-48 ">
                 <h3>Support</h3>
                 <nav class="footer-items">
                   <ul>
@@ -259,7 +263,7 @@
                   </ul>
                 </nav>
             </div>
-            <div class="contact flex-22">
+            <div class="contact  flex-22 sm-flex-48 ">
                 <h3>Contact</h3>
                 <nav class="footer-items">
                     <ul>
