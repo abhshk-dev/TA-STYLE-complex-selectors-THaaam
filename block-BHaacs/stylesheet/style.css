@@ -1,0 +1,667 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*-----Custom Styles -----*/
+
+/*------DESKTOP VIEW -----*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+body {
+  line-height: 1.5;
+  font-family: "Inter", sans-serif;
+  
+}
+#toggle, .bars {
+    display: none;
+}
+/*---- Variables Section ----*/
+
+:root {
+  --primary: rgb(89, 191, 194);
+  --bg: rgb(254, 249, 247);
+  --text-light: rgb(127,145,184);
+  --text-dark: rgb(40,62,125);
+}
+
+
+/*-----General Section -----*/
+
+
+.container {
+  max-width: 1360px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 5rem;
+}
+.padding{
+    padding-top: 5rem;
+}
+.flex {
+  display: flex;
+}
+.justify-bw{
+    justify-content: space-between;
+}
+.justify-center{
+    justify-content: center;
+}
+.align-center{
+    align-items: center;
+}
+
+.justify-around{
+    justify-content: space-around;
+}
+.flex-direction{
+    flex-direction: column;
+}
+.full-width{
+    width: 100%;
+}
+.flex-22{
+    flex: 0 1 21%;
+}
+.flex-45{
+    flex: 0 1 45%;
+}
+.flex-start{
+    align-items: flex-start;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/*----Buttons -----*/
+.btn{
+    display: inline-block;
+    border-radius: 0.4rem;
+    padding: 0.75rem 2.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/*----Header Section----*/
+
+.header {
+  background-color: rgb(89, 191, 194);
+  padding: 1rem 0;
+  width: 100%;
+}
+
+.brand{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.navbar li {
+    padding: 0.65rem ;
+}
+
+/*---hero section ----*/
+
+.hero{
+    background-color: var(--primary);
+    height: 100vh;
+    margin-bottom: 15rem;
+    
+}
+
+.hero-content{
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    margin-top:15rem ;
+}
+.hero-heading{
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 1.25;
+    
+}
+
+.hero-content .btn-primary{
+    color: var(--text-dark);
+    background-color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    
+}
+
+
+.hero-content img{
+    position: relative;
+    bottom: 4.5rem;
+    box-shadow: 0px 50px 24px -15px rgba(177,172,172,0.344);
+}
+
+
+/*-----Files Section ----*/
+
+.files nav{
+    border-bottom: 3px solid rgb(167, 164, 164);
+    padding-bottom: 3rem;
+    text-align: center;
+}
+
+.files a{
+    text-transform: uppercase;
+    color: rgba(167, 164, 164,0.6676);
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 900;
+}
+
+.files a img{
+    margin-right:0.7rem;
+}
+
+/*---- Monitoring section ---*/
+
+.monitor h3{
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--text-dark);
+    padding-bottom: 2rem;
+}
+.monitor p{
+    font-size: 1.2rem;
+    color: var(--text-light);
+    line-height: 1.5;
+    padding:1rem 0;
+}
+.monitor p::first-letter{
+    font-size: 2.2rem;
+    color: var(--primary)
+}
+
+.learn-btn{
+    color: #fff;
+    background-color: var(--primary);
+    padding: 0.5rem 2.5rem;
+    border-radius: 0;
+    position: relative;
+}
+.learn-btn::before{
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    border-top:1.2rem solid transparent ;
+    border-left:1.2rem solid #fff ;
+    border-bottom:1.2rem solid transparent ;
+    position: absolute;
+    right: 135px;
+    top:0.08rem;
+    
+
+}
+.learn-btn::after{
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    border-top:1.2rem solid transparent ;
+    border-left:1.2rem solid var(--primary);
+    border-bottom:1.299rem solid transparent ;
+    position: absolute;
+    left: 167px;
+    top: 0rem;
+}
+
+/*-----Weekly-Score Section-----*/
+
+.score h2{
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--text-dark);
+    text-align: center;
+    padding-bottom: 2.3rem;
+}
+
+table{
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 0.6rem;
+}
+table,
+  tr,
+  td,
+  th {
+    border: 1px solid rgb(182, 178, 178);
+    color: rgb(117,119,126);
+  }
+  
+  td,
+  th {
+    padding: 15px 60px 15px 20px;
+  }
+tr:nth-child(2n + 1) {
+    background: rgb(213,229,229);
+}
+ tr:first-child th {
+    color: #fff;
+    border: none;
+    text-align: left;
+    background-color: rgb(61,158,161);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/*---- Join section----*/
+
+.joinUs-header{
+    flex-direction: column;
+    width: 45%;
+    margin: 0 auto;
+   
+}
+
+.joinUs-header h3{
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--text-dark);
+    text-transform: capitalize;
+    text-align: center;
+    padding: 1rem ;
+}
+
+.joinUs-header h4{
+    font-size: 1rem;
+    font-weight: 900;
+    color: var(--text-dark);
+}
+.switch-container{
+    margin: 0.88rem 0;
+}
+.switch{
+    display: inline-block;
+    width: 4rem;
+    height: 2rem;
+    border-radius: 1rem;
+    background-color: rgba(99, 202, 206,0.454);
+    margin: 0 1rem;
+    position: relative;
+}
+
+
+.switch::after{
+    content: "|";
+    text-align: center;
+    position: absolute;
+    color: #fff;
+    height: 1.4rem;
+    width: 1.4rem;
+    font-size: 12px;
+    border-radius: 50%;
+    font-weight: 600;
+    border: 3px solid var(--primary);
+    left: 2.42rem;
+    top: 5px;
+    background-color: var(--primary);
+    
+
+}
+
+/*----plans ----*/
+
+.plan{
+    border: 3px solid gainsboro;
+    border-radius: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+.plan h3{
+    font-size: 1.7rem;
+    font-weight: 900;
+    color: var(--text-dark);
+    text-align: center;
+    padding: 1.5rem 0;
+}
+.plan p{
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0 1rem;
+    word-spacing: 0.1rem;
+    text-align: center;
+    color: var(--text-light);
+}
+.plan h2{
+    font-size: 3.5rem;
+    font-weight: 500;
+    color: rgb(89,191,194);
+    text-align: center;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid rgb(189,200,224);
+}
+
+.plan h2::before{
+    content: "$";
+    color: rgb(89,191,194);
+    font-size: 2.2rem;
+}
+
+.plan h2::after{
+    content: "/month";
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    color: var(--text-light);
+}
+
+.plan-details li{
+    font-size: 1.3rem;
+    color: var(--text-dark);
+    padding: 1rem 0;
+    font-weight: 500;
+    
+}
+
+.plan-details li span{
+    color:rgb(25, 172, 25);
+    font-weight: 800;
+    margin-right: 0.5rem;
+    font-size: 1rem;
+}
+
+.plan:first-child .plan-details li:last-child{
+    color: rgb(103,124,171);
+}
+
+.plan:first-child .plan-details li:last-child span{
+        font-size: 1rem;
+}
+.plan:first-child .plan-details li:nth-last-child(2) {
+    color: rgb(103,124,171);
+}
+
+.btn-secondary {
+    width: 100%;
+    border: 1px solid rgb(114, 127, 155);
+    text-align: center;
+    color: var(--text-dark);
+    justify-content: center;
+    background-color: #fff;
+    margin:2rem 0;
+}  
+.btn-colored{
+    background-color: var(--primary);
+    color: #fff;
+    border: 1px solid var(--primary);
+}
+
+/*-----CTA seciton ----*/
+
+
+.cta-started{
+    background-color: var(--primary);
+    border-radius: 3rem;
+    padding: 3rem 6rem;
+    flex-direction: column;
+}
+.cta-started h3{
+    color: #fff;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    padding: 1.2rem 0;
+    font-weight: 500;
+}
+.cta-started .btn{
+    background-color: #fff;
+    color: var(--text-dark);
+    padding: 0.7rem 3rem;
+    margin: 1rem 0;
+}
+
+/*---- footer section ---*/
+.footer{
+    margin-bottom: 3rem;
+}
+.brand h5{
+    color: var(--text-dark);
+}
+.brand p{
+    font-size: 1rem;
+    color: var(--text-light);
+    font-weight: 400;
+    padding: 2rem 0;
+}
+
+.socials li{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: var(--primary);
+    margin-right: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.socials li a{
+    color: #fff;
+    font-size: 0.8rem;
+}
+
+.footer h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+.footer-items ul li{
+    padding: 0.5rem 0;
+}
+.footer-items a {
+    color: rgb(115,135,178);
+    font-size: 1rem;
+   
+}
+
+/*----responsive layout ----*/
+
+@media screen and (max-width:768px) {
+    html{
+        font-size: 14px;
+    }
+    .container-mini{
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+    
+    .navbar {
+        display: none;
+    }
+    .bars{
+        display: inline-block;
+        color: #fff;
+    }
+    #toggle:checked ~ .navbar , .bars{
+        display: inline-block;
+    }
+    .navbar{
+        position: fixed;
+        text-align: center;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: var(--primary);
+        width: 100%;
+        height: 100vh;
+        z-index: 999;
+        padding-top: 8rem;
+    }
+    .header{
+        padding-top: 2rem;
+    }
+    .bars{
+        position: fixed;
+        right:2rem ;
+        z-index: 9999;
+        
+    }
+    .brand{
+        position: fixed;
+        z-index: 9999999;
+        left: 2rem;
+        
+    }
+    .sm-flex-col{
+        flex-direction: column;
+    }
+    .sm-img{
+        width: 100%;
+    }
+    .sm-flex-100{
+        flex: 0 1 100%;
+    }
+    .sm-flex-48{
+        flex: 0 1 48%;
+    }
+    .sm-wrap{
+        flex-wrap: wrap;
+    }
+    .flex-start{
+        align-items: unset;
+    }
+}
